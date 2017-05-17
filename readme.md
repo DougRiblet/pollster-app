@@ -1,4 +1,4 @@
-* Pollster
+## Pollster
 
-*** App for creating and managing online polls
+#### App for creating and managing online polls
 
