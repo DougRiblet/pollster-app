@@ -1,0 +1,36 @@
+{
+  "name": "pollster",
+  "version": "1.0.0",
+  "description": "App to create and administer online polls",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "FCC",
+    "voting"
+  ],
+  "author": "Doug Riblet",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.6",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "redux-promise": "^0.5.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.5.2",
+    "redux-logger": "^3.0.1",
+    "standard": "^10.0.2",
+    "webpack": "^2.4.1"
+  }
+}
