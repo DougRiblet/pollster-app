@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "App to create and administer online polls",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "nodemon ./server/app.js",
+    "build": "webpack --watch",
+    "build-css": "node-sass client/scss/main.scss client/public/css/main.css",
+    "flow": "flow",
+    "test": "jest"
+  },
   "keywords": [
     "FCC",
     "voting"
