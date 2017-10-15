@@ -103,17 +103,17 @@ var _reduxPromise2 = _interopRequireDefault(_reduxPromise);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var store = (0, _redux.createStore)(_root_reducer2.default, {}, (0, _redux.applyMiddleware)(_reduxLogger2.default, _reduxPromise2.default));
+// const store = createStore(reducer, {}, applyMiddleware(logger, promise));
 
-(0, _reactDom.render)(_react2.default.createElement(
-  _reactRedux.Provider,
-  { store: store },
-  _react2.default.createElement(
-    _reactRouterDom.BrowserRouter,
-    null,
-    _react2.default.createElement(_App2.default, null)
-  )
-), document.getElementById('app'));
+(0, _reactDom.render)(
+// <Provider store={store}>
+_react2.default.createElement(
+  _reactRouterDom.BrowserRouter,
+  null,
+  _react2.default.createElement(_App2.default, null)
+),
+// </Provider>,
+document.getElementById('app'));
 
 /***/ }),
 /* 1 */
@@ -13229,6 +13229,14 @@ var _react = __webpack_require__(8);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Header = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"Header\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _Main = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"Main\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _Main2 = _interopRequireDefault(_Main);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -13252,8 +13260,8 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(Header, null),
-        _react2.default.createElement(Main, null)
+        _react2.default.createElement(_Header2.default, null),
+        _react2.default.createElement(_Main2.default, null)
       );
     }
   }]);
