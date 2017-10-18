@@ -8,13 +8,13 @@ import reducer from './reducers/root_reducer';
 import logger from 'redux-logger';
 import promise from 'redux-promise';
 
-// const store = createStore(reducer, {}, applyMiddleware(logger, promise));
+const store = createStore(reducer, {}, applyMiddleware(logger, promise));
 
 render(
-  // <Provider store={store}>
+  <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>,
-  // </Provider>,
+  </Provider>,
   document.getElementById('app')
 );
