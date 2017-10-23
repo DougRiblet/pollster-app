@@ -3,12 +3,12 @@ import Header from './Header';
 import Main from './Main';
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
         <Header />
         <Main />
       </div>
-    )
+    );
   }
 }

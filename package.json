@@ -9,7 +9,7 @@
     "build-css": "node-sass client/scss/main.scss client/public/css/main.css",
     "flow": "flow",
     "test": "jest",
-    "lint": "eslint client"
+    "lint": "eslint --ext .jsx client"
   },
   "keywords": [
     "FCC",

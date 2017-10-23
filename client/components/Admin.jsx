@@ -6,7 +6,6 @@ export default class Admin extends Component {
       <div>
         <h2>Admin Polls page</h2>
       </div>
-    )
+    );
   }
 }
- 
