@@ -13317,7 +13317,6 @@ var reducer = function reducer() {
   var action = arguments[1];
 
   switch (action.type) {
-
     default:
       return state;
   }
@@ -14040,17 +14039,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(39);
 
-var _App = __webpack_require__(117);
-
-var _App2 = _interopRequireDefault(_App);
-
 var _reactRedux = __webpack_require__(120);
 
 var _redux = __webpack_require__(67);
-
-var _root_reducer = __webpack_require__(118);
-
-var _root_reducer2 = _interopRequireDefault(_root_reducer);
 
 var _reduxLogger = __webpack_require__(121);
 
@@ -14059,6 +14050,14 @@ var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 var _reduxPromise = __webpack_require__(122);
 
 var _reduxPromise2 = _interopRequireDefault(_reduxPromise);
+
+var _App = __webpack_require__(117);
+
+var _App2 = _interopRequireDefault(_App);
+
+var _root_reducer = __webpack_require__(118);
+
+var _root_reducer2 = _interopRequireDefault(_root_reducer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

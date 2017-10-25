@@ -1,3 +1,15 @@
 body {
   background-color: white;
-  padding: 150px; }
+  padding: 0px;
+  margin: 0px; }
+
+nav ul li {
+  display: inline;
+  margin-right: 25px; }
+
+header {
+  padding: 20px 150px;
+  background-color: #e7e7ee; }
+
+main {
+  padding: 40px 150px; }
