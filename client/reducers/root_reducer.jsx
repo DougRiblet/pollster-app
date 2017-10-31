@@ -1,8 +1,8 @@
-const reducer = (state = {}, action) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
+import { combineReducers } from 'redux';
+import pollsReducer from './polls_reducer';
 
-export default reducer;
+const rootReducer = combineReducers({
+  pollsReducer,
+});
+
+export default rootReducer;

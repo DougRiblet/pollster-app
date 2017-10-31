@@ -1,2 +1,7 @@
 export const CAST_VOTE = 'CAST_VOTE';
 export const CREATE_POLL = 'CREATE_POLL';
+
+export const FETCH_POLLS_LIST = 'FETCH_POLLS_LIST';
+export const FETCH_POLLS_SUCCESS = 'FETCH_POLLS_SUCCESS';
+export const FETCH_POLLS_FAILURE = 'FETCH_POLLS_FAILURE';
+

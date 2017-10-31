@@ -13312,17 +13312,20 @@ exports.default = App;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reducer = function reducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var action = arguments[1];
 
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
+var _redux = __webpack_require__(67);
 
-exports.default = reducer;
+var _polls_reducer = __webpack_require__(286);
+
+var _polls_reducer2 = _interopRequireDefault(_polls_reducer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var rootReducer = (0, _redux.combineReducers)({
+  pollsReducer: _polls_reducer2.default
+});
+
+exports.default = rootReducer;
 
 /***/ }),
 /* 119 */
@@ -31420,6 +31423,30 @@ var Login = function (_Component) {
 }(_react.Component);
 
 exports.default = Login;
+
+/***/ }),
+/* 286 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function pollsReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments[1];
+
+  switch (action.type) {
+
+    default:
+      return state;
+  }
+};
+
+exports.default = pollsReducer;
 
 /***/ })
 /******/ ]);
